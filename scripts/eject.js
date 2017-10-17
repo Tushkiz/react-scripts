@@ -202,6 +202,10 @@ inquirer
     console.log(`  Adding ${cyan('Babel')} preset`);
     appPackage.babel = {
       presets: ['react-app'],
+      plugins: [
+        'syntax-dynamic-import',
+        'react-loadable/babel',
+      ],
     };
 
     // Add ESlint config
